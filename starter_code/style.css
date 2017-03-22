@@ -5,7 +5,7 @@
 	http://www.w3schools.com/cssref/css3_pr_box-sizing.asp */
 	font-family: 'Proza Libre', sans-serif;
 	font-size: 16px;
-	border-radius: 5px;
+	border-radius: 8px;
 }
 h1 {
 	font-size: 28px;
@@ -33,19 +33,64 @@ h1 {
 	width: 100%;
 }
 .container {
-	width: 40%;
+	width: 48%;
 	display: inline-block;
+	padding: 16px;
+	margin: 1%;
 }
 .formSection {
 	float: left;
-	background-color: lightblue;
+	background-color: #E3E6EC;
 }
 .results {
-	background-color: pink;
+	background-color: #C8DBB3;
 }
 /*-------- Form Styles --------*/
 
-
+form{
+	background-color: #E3E6EC;
+	max-width: 500px;
+	}
+label {
+	width: 100%;
+	display: block;
+}
+.row {
+	padding: 8px;
+}
+.formGroup {
+	display: inline-block;
+	width: 100%;
+}
+/*input[type="radio"] + label {
+	display: inline;	
+}*/
+.radio > input + label , .check > input + label{
+	display: inline;
+}
+.radio, .check {
+	padding: 5px 0 5px 12px;
+}
+#name, #verb-1, #noun-1, #noun-2 {
+	padding: 14px;
+	border-style: none;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #CCC;
+}
+#mission {
+	height: 100px;
+	padding: 14px;
+}
+input[type="submit"] {
+	float: right;
+	font-weight: 800;
+	margin-top: 10px;
+	background-color: rgba(39, 208, 127, 0.5);
+}
+input[type="submit"]:hover {
+	background-color: rgb(39, 208, 127);
+}
 /* 
 
 	Make sure the form itself fills the width of whatever container its in, but no larger than 500px.

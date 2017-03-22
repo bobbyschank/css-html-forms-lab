@@ -3,7 +3,16 @@
 	box-sizing: border-box; 
 	/* ^^^ Forces all elements to include content, padding, and border as part of their width/height calculation: 
 	http://www.w3schools.com/cssref/css3_pr_box-sizing.asp */
+	font-family: 'Proza Libre', sans-serif;
+	font-size: 16px;
+	border-radius: 5px;
 }
+h1 {
+	font-size: 28px;
+	font-weight: 800;
+	margin: 20px 0 10px 10px;
+}
+
 
 /* 
 	Use Google Fonts to make all of the text Proza Libre.
@@ -20,7 +29,20 @@
 
 	Every container, form, input, and button should have rounded corners.
 */
-
+#main {
+	width: 100%;
+}
+.container {
+	width: 40%;
+	display: inline-block;
+}
+.formSection {
+	float: left;
+	background-color: lightblue;
+}
+.results {
+	background-color: pink;
+}
 /*-------- Form Styles --------*/
 
 
